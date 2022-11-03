@@ -41,7 +41,7 @@
             <input required type="text" /> <br />
 
             <label>Jenis Kelamin</label> <br />
-            <input required type="radio" /> Laki Laki 
+            <input type="radio" /> Laki Laki 
             <input type="radio" /> Perempuan
             <br />
 
@@ -61,7 +61,7 @@
             </select>
             <br />
             <br />
-            <button id="submit" onclick='return confirm("Yakin ingin dikirim ?")'>Daftar</button>
+           <button id="submit" onclick='konfirmasi()'>Daftar</button>
           </form>
         </div>
         
@@ -82,6 +82,11 @@
 
         var tanggal = document.getElementById('tanggal');
         tanggal.append(option);
+
+        // Membuat element dinamis
+        function konfirmasi (){
+          return confirm("Yakin ingin dihapus ?");
+        }
     </script>
   </body>
 </html>
